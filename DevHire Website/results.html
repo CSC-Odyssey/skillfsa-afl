@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #15232C;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #15232C;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 80px;
+            color: #B05454;
+            font-family: "VT323", monospace;
+            box-sizing: border-box;
+            font-style: italic;
+            letter-spacing: 3px;
+            margin-top: 50px;
+        }
+        .block{
+			display: flex;
+			flex-direction: row;
+            justify-content: space-between;
+            background-color: #D9D9D9;
+            color: #15232C;
+            border: none;
+            border-radius: 10px;
+            font-size: 30px;
+            font-family: "VT323", monospace;
+            padding: 20px 100px;
+            margin-top: 20px;
+            cursor: pointer;
+            white-space: nowrap;
+            letter-spacing: 5px;
+        }
+		.block span {
+            margin-right: 70px;
+        }
+        .block-list{
+			margin-top: 100px;
+            padding-inline: 450px;
+
+        }
+        .block-category{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+			font-family: "VT323", monospace;
+			font-size: 25px;
+
+        }
+        .block-category p {
+            margin-right: 84px;
+			
+        }
+		.square {
+  			height: 25px;
+  			width: 25px;
+  			display: inline-block;
+		}
+		.square-category {
+			justify-content: flex-end;
+		}
+    </style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+</head>
+<body>
+
+    <div class="header">List of Employees</div>
+
+
+
+    <div class="block-list">
+
+		<!-- CATEGORIES -->
+		<div class="block-category">
+			<p style="color: #418BD0;">HTML</p>
+			<p style="color: #D04197;">CSS</p>
+			<p style="color: #D07541;">Javascript</p>
+		</div>
+
+
+        <div class="block">
+			Brian Arnold
+			<div class="square-category">
+				<span class="square" style="background-color: #418BD0;"></span>
+				<span class="square" style="background-color: #D04197;"></span>
+				<span class="square" style="background-color: #D07541;"></span>
+			</div>
+		</div>
+
+		<div class="block">
+			Zoe Fraser
+			<div class="square-category">
+				<span class="square" style="background-color: #418BD0;"></span>
+				<span class="square" style="background-color: #D9D9D9;"></span>
+				<span class="square" style="background-color: #D07541;"></span>
+			</div>
+		</div>
+
+		<div class="block">
+			Gordon Duncan
+			<div class="square-category">
+				<span class="square" style="background-color: #D9D9D9;"></span>
+				<span class="square" style="background-color: #D04197;"></span>
+				<span class="square" style="background-color: #D07541;"></span>
+			</div>
+		</div>
+
+		<div class="block">
+			Theresa Churchill
+			<div class="square-category">
+				<span class="square" style="background-color: #D9D9D9;"></span>
+				<span class="square" style="background-color: #D04197;"></span>
+				<span class="square" style="background-color: #D9D9D9;"></span>
+			</div>
+		</div>
+
+		<div class="block">
+			Molly Bond
+			<div class="square-category">
+				<span class="square" style="background-color: #D9D9D9;"></span>
+				<span class="square" style="background-color: #D9D9D9;"></span>
+				<span class="square" style="background-color: #D07541;"></span>
+			</div>
+		</div>
+		
+    </div>
+
+</body>
+</html>
