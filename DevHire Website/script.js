@@ -17,15 +17,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 if (!item.skillset.includes('HTML')) {
                   console.log("one")
-                  blue = '<div id="tick-mark-blue" style="display: none"></div>';
+                  blue = '<div id="tick-mark-blue" style="opacity: 0"></div>';
                 }
                 if (!item.skillset.includes('CSS')) {
                   console.log("two")
-                  pink = '<div id="tick-mark-pink" style="display: none"></div>';
+                  pink = '<div id="tick-mark-pink" style="opacity: 0"></div>';
                 }
                 if (!item.skillset.includes('JavaScript')) {
                   console.log("three")
-                  orange = '<div id="tick-mark-orange" style="display: none"></div>';
+                  orange = '<div id="tick-mark-orange" style="opacity: 0"></div>';
                 }
 
                 const htmlString = {
