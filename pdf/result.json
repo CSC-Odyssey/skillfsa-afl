@@ -1,17 +1,17 @@
 {
     "results": [
         {
-            "name": "Jane",
+            "name": "Jane Hunter",
             "email": "jane@example.com",
             "skillset": ["HTML", "CSS", "JavaScript", "Python"]
         }, 
         {
-            "name": "John",
+            "name": "John Maker",
             "email": "john@example.com",
             "skillset": ["HTML", "CSS", "JavaScript"]
         },
         {
-            "name": "Jug",
+            "name": "Jug Hitler",
             "email": "jug@example.com",
             "skillset": ["JavaScript", "Python"]
         }
