@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="script.js"></script>
     <style>
         body {
             background-color: #15232C;
@@ -32,11 +33,13 @@
             border-radius: 10px;
             font-size: 30px;
             font-family: "VT323", monospace;
-            padding: 20px 100px;
+            padding: 20px 50px;
             margin-top: 20px;
             cursor: pointer;
             white-space: nowrap;
             letter-spacing: 5px;
+			min-width: 300px;
+			overflow: hidden;
         }
 		.block span {
             margin-right: 70px;
@@ -47,28 +50,63 @@
 
         }
         .block-category{
+			min-width: 50rem;
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
 			font-family: "VT323", monospace;
 			font-size: 25px;
-
+			overflow: hidden;
+			padding: 20px 50px;
         }
         .block-category p {
-            margin-right: 84px;
-			
+            margin: 1rem;
+			justify-content: center;
+			text-align: center;
         }
 		.square {
   			height: 25px;
   			width: 25px;
   			display: inline-block;
+			margin-left: 3rem;
+			display: block;
 		}
 		.square-category {
 			justify-content: flex-end;
 		}
+
+		.title {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: row;
+		}
+
+		.title p {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		.block-width {
+			min-width: 300px;
+		}
+
+		.square-container{
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: center;
+			flex: 1;
+		}
+
+		.title-container {
+			flex: 2.3;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
     </style>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
 </head>
 <body>
 
@@ -76,26 +114,63 @@
 
 
 
-    <div class="block-list">
+    <main class="block-list">
 
 		<!-- CATEGORIES -->
-		<div class="block-category">
-			<p style="color: #418BD0;">HTML</p>
-			<p style="color: #D04197;">CSS</p>
-			<p style="color: #D07541;">Javascript</p>
-		</div>
+		<section class="block-category block-width">
+			<p style="color: #ffffff;" class="title">Name</p>
+			<p style="color: #ffffff;" class="title">Email</p>
+			<div class="square-container">
+				<p style="color: #418BD0;">HTML</p>
+				<p style="color: #D04197;">CSS</p>
+				<p style="color: #D07541;">JS</p>
+			</div>	
+		</section>
 
 
-        <div class="block">
-			Brian Arnold
-			<div class="square-category">
-				<span class="square" style="background-color: #418BD0;"></span>
-				<span class="square" style="background-color: #D04197;"></span>
-				<span class="square" style="background-color: #D07541;"></span>
+        <article class="block block-width">
+			<div class="title">
+				<div class="title-container">
+					<p>Brian Duncan</p>
+					<p>briandunc@mail.com</p>
+				</div>
+				<div class="square-container">
+					<div id="html-square"class="square" style="background-color: #418BD0;"></div>
+					<div id="css-square" class="square" style="background-color: #D04197;"></div>
+					<div id="js-square" class="square" style="background-color: #D07541;"></div>
+				</div>
 			</div>
-		</div>
+		</article>
 
-		<div class="block">
+		<article class="block block-width">
+			<div class="title">
+				<div class="title-container">
+					<p>Brian Duncan</p>
+					<p>briandunc@mail.com</p>
+				</div>
+				<div class="square-container">
+					<div id="html-square"class="square" style="background-color: #418BD0;"></div>
+					<div id="css-square" class="square" style="background-color: #D04197;"></div>
+					<div id="js-square" class="square" style="background-color: #D07541;"></div>
+				</div>
+			</div>
+		</article>
+
+		<article class="block block-width">
+			<div class="title">
+				<div class="title-container">
+					<p>Brian Duncan</p>
+					<p>briandunc@mail.com</p>
+				</div>
+				<div class="square-container">
+					<div id="html-square"class="square" style="background-color: #418BD0;"></div>
+					<div id="css-square" class="square" style="background-color: #D04197;"></div>
+					<div id="js-square" class="square" style="background-color: #D07541;"></div>
+				</div>
+			</div>
+		</article>
+
+		<!-- <div class="block">
 			Zoe Fraser
 			<div class="square-category">
 				<span class="square" style="background-color: #418BD0;"></span>
@@ -129,9 +204,9 @@
 				<span class="square" style="background-color: #D9D9D9;"></span>
 				<span class="square" style="background-color: #D07541;"></span>
 			</div>
-		</div>
-		
-    </div>
-
+		</div> -->
+    </main>
+	<button id="myButton">Click Me</button>
+	<button id="myButton2">Click Me!</button>
 </body>
 </html>
