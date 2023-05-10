@@ -23,7 +23,7 @@
             letter-spacing: 3px;
             margin-top: 50px;
         }
-        .block{
+        .block {
 			display: flex;
 			flex-direction: row;
             justify-content: space-between;
@@ -47,7 +47,6 @@
         .block-list{
 			margin-top: 100px;
             padding-inline: 5rem;
-
         }
         .block-category{
 			min-width: 50rem;
@@ -87,7 +86,8 @@
 		}
 
 		.block-width {
-			min-width: 300px;
+			min-width: 690px;
+			max-width: 780px;
 		}
 
 		.square-container{
@@ -102,7 +102,110 @@
 			flex: 2.3;
 			display: flex;
 			flex-direction: row;
-			justify-content: space-between;
+			justify-content: space-evenly;
+		}
+
+		.centered {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		#tick-mark-blue {
+			position: relative;
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			margin-inline: 1.1rem;
+		}
+
+		#tick-mark-blue::before {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			height: 50%;
+			width: 3px;
+			background-color: #418BD0;
+			content: "";
+			transform: translateX(10px) rotate(-45deg);
+			transform-origin: left bottom;
+		}
+
+		#tick-mark-blue::after {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 3px;
+			width: 100%;
+			background-color: #418BD0;
+			content: "";
+			transform: translateX(10px) rotate(-45deg);
+			transform-origin: left bottom;
+		}
+
+		#tick-mark-pink {
+			position: relative;
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			margin-inline: 1.1rem;
+		}
+
+		#tick-mark-pink::before {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			height: 50%;
+			width: 3px;
+			background-color: #D04197;
+			content: "";
+			transform: translateX(10px) rotate(-45deg);
+			transform-origin: left bottom;
+		}
+
+		#tick-mark-pink::after {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 3px;
+			width: 100%;
+			background-color: #D04197;
+			content: "";
+			transform: translateX(10px) rotate(-45deg);
+			transform-origin: left bottom;
+		}
+
+		#tick-mark-orange {
+			position: relative;
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			margin-inline: 1.1rem;
+		}
+
+		#tick-mark-orange::before {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			height: 50%;
+			width: 3px;
+			background-color: #D07541;
+			content: "";
+			transform: translateX(10px) rotate(-45deg);
+			transform-origin: left bottom;
+		}
+
+		#tick-mark-orange::after {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 3px;
+			width: 100%;
+			background-color: #D07541;
+			content: "";
+			transform: translateX(10px) rotate(-45deg);
+			transform-origin: left bottom;
 		}
     </style>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap">
@@ -114,7 +217,7 @@
 
 
 
-    <main id="block-element" class="block-list">
+    <main id="block-element" class="block-list centered">
 
 		<!-- CATEGORIES -->
 		<section class="block-category block-width">
@@ -135,37 +238,12 @@
 					<p>briandunc@mail.com</p>
 				</div>
 				<div class="square-container">
-					<div id="html-square"class="square" style="background-color: #418BD0;"></div>
-					<div id="css-square" class="square" style="background-color: #D04197;"></div>
-					<div id="js-square" class="square" style="background-color: #D07541;"></div>
-				</div>
-			</div>
-		</article>
-
-		<article class="block block-width">
-			<div class="title">
-				<div class="title-container">
-					<p>Brian Duncan</p>
-					<p>briandunc@mail.com</p>
-				</div>
-				<div class="square-container">
-					<div id="html-square"class="square" style="background-color: #418BD0;"></div>
-					<div id="css-square" class="square" style="background-color: #D04197;"></div>
-					<div id="js-square" class="square" style="background-color: #D07541;"></div>
-				</div>
-			</div>
-		</article>
-
-		<article class="block block-width">
-			<div class="title">
-				<div class="title-container">
-					<p>Brian Duncan</p>
-					<p>briandunc@mail.com</p>
-				</div>
-				<div class="square-container">
-					<div id="html-square"class="square" style="background-color: #418BD0;"></div>
-					<div id="css-square" class="square" style="background-color: #D04197;"></div>
-					<div id="js-square" class="square" style="background-color: #D07541;"></div>
+					<!-- <div id="html-square"class="square" style="background-color: #418BD0;"></div> -->
+					<div id="tick-mark-blue"></div>
+					<div id="tick-mark-pink"></div>
+					<div id="tick-mark-orange"></div>
+					<!-- <div id="css-square" class="square" style="background-color: #D04197;"></div>
+					<div id="js-square" class="square" style="background-color: #D07541;"></div> -->
 				</div>
 			</div>
 		</article>
