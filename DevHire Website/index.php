@@ -1,4 +1,5 @@
-<?php include("../DevHire Website/serverconnectionHandler.php");?>
+<?php include("../DevHire Website/indexHandler.php");
+?>
 
 <!DOCTYPE html>
 <html>

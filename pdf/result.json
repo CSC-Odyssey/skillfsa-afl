@@ -3,17 +3,27 @@
         {
             "name": "Jane Hunter",
             "email": "jane@example.com",
-            "skillset": ["HTML", "CSS"]
-        }, 
+            "skillset": [
+                "css",
+                "html"
+            ]
+        },
         {
             "name": "John Maker",
             "email": "john@example.com",
-            "skillset": ["HTML", "CSS", "JavaScript"]
+            "skillset": [
+                "css",
+                "html",
+                "javascript"
+            ]
         },
         {
             "name": "Jug Hitler",
             "email": "jug@example.com",
-            "skillset": ["JavaScript", "Python"]
+            "skillset": [
+                "javascript",
+                "python"
+            ]
         }
     ]
 }
