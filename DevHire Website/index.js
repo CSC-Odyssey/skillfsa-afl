@@ -51,6 +51,11 @@ form.addEventListener("submit", function(event) {
           skillset = skillset.filter((skill) => ['html', 'css', 'javascript'].includes(skill.replace(/[^a-zA-Z]/g, '')));
           skillset = skillset.map((skill) => skill.replace(/[^a-zA-Z]/g, ''));
 
+          if (!emailMatch || skillset.length === 0) {
+            errorMessage.innerText = "Data not found";
+            return;
+          }
+
           // Step 5: Populate the result in result.json
           const results = {
             email: email,

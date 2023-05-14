@@ -25,7 +25,6 @@ include("resultsHandler.php");
 				<p style="color: #D07541;">JS</p>
 			</div>	
 		</section>
-
     </main>
 	<button id="myButton2">Click Me!</button>
 </body>
