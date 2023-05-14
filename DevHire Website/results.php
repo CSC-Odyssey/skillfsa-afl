@@ -11,6 +11,29 @@ include("resultsHandler.php");
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+	<a href="index.php"><button class="button">UPLOAD</button></a>
+	<style>
+		      .button {
+        background-color: #B05454;
+        color: #D9D9D9;
+        border: none;
+        border-radius: 5px;	
+        font-size: 25px;
+        font-family: "DotGothic16", monospace;
+        padding: 10px 80px;
+        margin-top: 20px;
+		margin-left: 1150px;
+        cursor: pointer;
+        white-space: nowrap;
+		letter-spacing: 5px;
+		justify-content: center;
+        align-items: center;
+      }
+      .button:hover {
+        background-color: #D9D9D9;
+        color: #B05454;
+      }
+	</style>
 </head>
 <body>
     <div class="header">List of Employees</div>
