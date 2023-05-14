@@ -43,13 +43,14 @@ form.addEventListener("submit", function(event) {
 
           // Step 4: Extract the required information from the text using regular expressions
           const emailPattern = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z]{2,}\b/i;
-          const skillsetPattern = /Skills:(.*)/;
+          const skillsetPattern = /([\s\S]*)/;
           const emailMatch = text.match(emailPattern);
           const skillsetMatch = text.match(skillsetPattern);
           const email = emailMatch ? emailMatch[0].trim() : "N/A";
           let skillset = skillsetMatch ? skillsetMatch[1].toLowerCase().split(/[ ,]+/) : [];
-          skillset = skillset.filter((skill) => ['html', 'css', 'javascript'].includes(skill.replace(/[^a-zA-Z]/g, '')));
+          skillset = skillset.filter((skill) => ['html', 'javascript', 'css'].includes(skill.replace(/[^a-zA-Z]/g, '').toLowerCase()));
           skillset = skillset.map((skill) => skill.replace(/[^a-zA-Z]/g, ''));
+         
 
           if (!emailMatch || skillset.length === 0) {
             errorMessage.innerText = "Data not found";
