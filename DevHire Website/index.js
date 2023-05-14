@@ -47,7 +47,7 @@ form.addEventListener("submit", function(event) {
           const emailMatch = text.match(emailPattern);
           const skillsetMatch = text.match(skillsetPattern);
           const email = emailMatch ? emailMatch[0].trim() : "N/A";
-          let skillset = skillsetMatch ? skillsetMatch[1].toLowerCase().split(/[ ,]+/) : [];
+          let skillset = skillsetMatch ? skillsetMatch[1].toLowerCase().split(/[  ,/|]+/) : [];
           skillset = skillset.filter((skill) => ['html', 'javascript', 'css'].includes(skill.replace(/[^a-zA-Z]/g, '').toLowerCase()));
           skillset = skillset.map((skill) => skill.replace(/[^a-zA-Z]/g, ''));
          
