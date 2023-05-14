@@ -1,1 +1,30 @@
-{"results":[{"name":"Jane Hunter","email":"jane@example.com","skillset":["css","html"]},{"name":"John Maker","email":"john@example.com","skillset":["css","html","javascript"]},{"name":"Jug Hitler","email":"jug@example.com","skillset":["javascript","python"]},{"email":"austinandres360@gmail.com","skillset":["css","html","javascript"]},{"email":"michael@majordan.net","skillset":["css","javascript"]}]}
+{
+    "results": [
+        {
+            "name": "Jane Hunter",
+            "email": "jane@example.com",
+            "skillset": [
+                "css",
+                "html"
+            ]
+        },
+        {
+            "name": "John Maker",
+            "email": "john@example.com",
+            "skillset": [
+                "css",
+                "html",
+                "javascript"
+            ]
+        },
+        {
+            "name": "Jug Hitler",
+            "email": "jug@example.com",
+            "skillset": [
+                "javascript",
+                "python"
+            ]
+        }
+
+    ]
+}

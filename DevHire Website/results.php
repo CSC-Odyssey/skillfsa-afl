@@ -26,18 +26,6 @@ include("resultsHandler.php");
 			</div>	
 		</section>
 
-        <article class="block block-width">
-			<div class="title">
-				<div class="title-container">
-					<p>briandunc@mail.com</p>
-				</div>
-				<div class="square-container">
-					<div id="tick-mark-blue"></div>
-					<div id="tick-mark-pink"></div>
-					<div id="tick-mark-orange"></div>
-				</div>
-			</div>
-		</article>
     </main>
 	<button id="myButton2">Click Me!</button>
 </body>
