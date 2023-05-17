@@ -1,4 +1,3 @@
-
 <?php
 include("../DevHire Website/serverconnectionHandler.php");
 
@@ -10,5 +9,4 @@ foreach ($data['results'] as $item) {
   $skillset = $item['skillset'];
 
 }
-
 ?>
